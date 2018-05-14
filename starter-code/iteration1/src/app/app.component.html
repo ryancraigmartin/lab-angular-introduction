@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="container">
+  <div *ngFor = "let image of photoArray">
+    <div><img class="book-image" src="{{image.src}}" alt="">
+      <div class="image-text">{{image.text}}</div>
+    </div>
+  </div>
+</div>
